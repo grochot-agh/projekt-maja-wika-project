@@ -8,7 +8,7 @@ Grupa Projektowa Wiktoria Lasek, Maja Lempart
 
 Tytuł Projektu: TravelBuddy  
 
-Cel Projektu: Stworzenie aplikacji webowej, która umożliwi użytkownikom wspólne planowanie podróży.  
+Cel Projektu: Stworzenie aplikacji webowej, która umożliwi planowanie podróży i znajdywanie jak najatrakcyjniejszych cen lotów.  
 
 Wykorzystywane Technologie:
     HTML - do struktury aplikacji oraz tworzenia formularzy użytkownika. 
@@ -22,14 +22,10 @@ Wykorzystywane Technologie:
 Krótki Opis Projektu:
 1. Dobieranie Celu Podróży: Użytkownicy będą mogli wypełniać formularz z preferencjami (np. budżet, typ aktywności), na podstawie którego aplikacja zaproponuje odpowiednie miejsca podróży. 
 2. Bookowanie Lotów: Integracja z zewnętrznym API do rezerwacji lotów, umożliwiająca użytkownikom bookowanie biletów bezpośrednio z aplikacji (Google Flights). 
-3.  Tworzenie Grup Znajomych: Użytkownicy będą mogli tworzyć grupy, zapraszać znajomych i wspólnie planować podróże. 
-4. Dodawanie Miejsc i Atrakcji: Każdy użytkownik w grupie będzie mógł dodawać miejsca do zwiedzania, restauracje, atrakcje turystyczne itp. 
-5. Przeglądanie Mapy: Umożliwienie użytkownikom przeglądania mapy z zaznaczonymi miejscami, które zostały dodane do planu podróży. 
+3. Przeglądanie Mapy: Umożliwienie użytkownikom przeglądania mapy z zaznaczonymi miejscami, które zostały dodane do planu podróży. 
 
 Przykładowe użytkowanie:
     Użytkownik loguje się do aplikacji i wypełnia formularz preferencji podróży. 
     Aplikacja proponuje cele podróży na podstawie wprowadzonych preferencji. 
-    Użytkownik wybiera cel podróży i tworzy grupę znajomych, zapraszając innych użytkowników. 
-    Użytkownicy wspólnie dodają miejsca do zwiedzania, restauracje, atrakcje itp. 
-    Wszyscy członkowie grupy mogą przeglądać interaktywną mapę z zaznaczonymi miejscami. 
+    Użytkownik wybiera cel podróży.
     Użytkownicy mogą bookować loty bezpośrednio z aplikacji dzięki integracji z API do rezerwacji lotów. 
