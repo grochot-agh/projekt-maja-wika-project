@@ -4,11 +4,11 @@
 
 Języki Programowania Aplikacji Internetowych, 2024 
 
-Grupa Projektowa Wiktoria Lasek, Maja Lempart 
+Grupa Projektowa: Wiktoria Lasek, Maja Lempart 
 
 Tytuł Projektu: TravelBuddy  
 
-Cel Projektu: Stworzenie aplikacji webowej, która umożliwi planowanie podróży i znajdywanie jak najatrakcyjniejszych cen lotów.  
+Cel Projektu: Stworzenie aplikacji webowej, która umożliwi planowanie podróży na podstawie preferencji użytkownika i znajdywanie jak najatrakcyjniejszych cen lotów.  
 
 Wykorzystywane Technologie:
     HTML - do struktury aplikacji oraz tworzenia formularzy użytkownika. 
