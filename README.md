@@ -11,13 +11,12 @@ Tytuł Projektu: TravelBuddy
 Cel Projektu: Stworzenie aplikacji webowej, która umożliwi planowanie podróży na podstawie preferencji użytkownika i znajdywanie jak najatrakcyjniejszych cen lotów.  
 
 Wykorzystywane Technologie:
-    HTML - do struktury aplikacji oraz tworzenia formularzy użytkownika. 
-    CSS i Bootstrap - do stylizacji aplikacji oraz zapewnienia responsywności 
-    JavaScript - do obsługi dynamicznych interakcji, walidacji formularzy oraz dynamicznego aktualizowania zawartości strony. 
-    Flask - jako framework backendowy do obsługi logiki serwera, zarządzania żądaniami HTTP oraz integracji z bazą danych. 
-    SQLAlchemy - do obsługi relacyjnej bazy danych, zarządzania modelami danych oraz wykonywania operacji CRUD  
-    REST API - do komunikacji między frontendem a backendem, zapewnienia integracji z zewnętrznymi serwisami, np. Google API do bookowania lotów. 
-    Map API - do wyświetlania interaktywnej mapy z zaznaczonymi miejscami np. Google Maps API. 
+    HTML - struktura aplikacji i tworzenie formularzy użytkownika; 
+    CSS i Bootstrap - stylizacja aplikacji oraz responsywność; 
+    JavaScript - dynamiczne interakcje (np. kliknięcie menu), walidacja formularzy oraz dynamiczne aktualizowanie zawartości strony;
+    Flask - jako framework backendowy do obsługi logiki serwera, zarządzania żądaniami HTTP oraz integracji z bazą danych; 
+    SQLAlchemy - do obsługi relacyjnej bazy danych oraz operacji CRUD
+    REST API - komunikacja między frontendem a backendem, zapewnienie integracji z zewnętrznymi serwisami, np. Google API do bookowania lotów. 
 
 Krótki Opis Projektu:
 1. Dobieranie Celu Podróży: Użytkownicy będą mogli wypełniać formularz z preferencjami (np. budżet, typ aktywności), na podstawie którego aplikacja zaproponuje odpowiednie miejsca podróży. 
