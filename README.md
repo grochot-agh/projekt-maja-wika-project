@@ -21,7 +21,8 @@ Wykorzystywane Technologie:
 Krótki Opis Projektu:
 1. Dobieranie Celu Podróży: Użytkownicy będą mogli wypełniać formularz z preferencjami (np. budżet, typ aktywności), na podstawie którego aplikacja zaproponuje odpowiednie miejsca podróży. 
 2. Bookowanie Lotów: Integracja z zewnętrznym API do rezerwacji lotów, umożliwiająca użytkownikom bookowanie biletów bezpośrednio z aplikacji (Google Flights). 
-3. Przeglądanie Mapy: Umożliwienie użytkownikom przeglądania mapy z zaznaczonymi miejscami, które zostały dodane do planu podróży. 
+3. Przeglądanie Mapy: Umożliwienie użytkownikom przeglądania mapy z zaznaczonymi miejscami, które zostały dodane do planu podróży.
+4. Możliwość wyszukania lotów samemu wpisując cel podróży 
 
 Przykładowe użytkowanie:
     Użytkownik loguje się do aplikacji i wypełnia formularz preferencji podróży. 
