@@ -8,24 +8,29 @@ Grupa Projektowa: Wiktoria Lasek, Maja Lempart
 
 Tytuł Projektu: TravelBuddy  
 
-Cel Projektu: Stworzenie aplikacji webowej, która umożliwi planowanie podróży na podstawie preferencji użytkownika i znajdywanie jak najatrakcyjniejszych cen lotów.  
+Cel Projektu:
+Celem projektu jest stworzenie wszechstronnej aplikacji internetowej, która pomoże użytkownikom w planowaniu podróży. TravelBuddy ma na celu zapewnienie funkcji takich jak wyszukiwanie lotów, zarządzanie budżetem oraz quiz doboru miejsca wakacyjnego.
 
 Wykorzystywane Technologie:
-    HTML - struktura aplikacji i tworzenie formularzy użytkownika; 
-    CSS i Bootstrap - stylizacja aplikacji oraz responsywność; 
-    JavaScript - dynamiczne interakcje (np. kliknięcie menu), walidacja formularzy oraz dynamiczne aktualizowanie zawartości strony;
-    Flask - jako framework backendowy do obsługi logiki serwera, zarządzania żądaniami HTTP oraz integracji z bazą danych; 
-    SQLAlchemy - do obsługi relacyjnej bazy danych oraz operacji CRUD
-    REST API - komunikacja między frontendem a backendem, zapewnienie integracji z zewnętrznymi serwisami, np. Google API do bookowania lotów. 
+HTML5
+JavaScript
+Bootstrap
+Flask
+pytest
 
-Krótki Opis Projektu:
-1. Dobieranie Celu Podróży: Użytkownicy będą mogli wypełniać formularz z preferencjami (np. budżet, typ aktywności), na podstawie którego aplikacja zaproponuje odpowiednie miejsca podróży. 
-2. Bookowanie Lotów: Integracja z zewnętrznym API do rezerwacji lotów, umożliwiająca użytkownikom bookowanie biletów bezpośrednio z aplikacji (Google Flights). 
-3. Przeglądanie Mapy: Umożliwienie użytkownikom przeglądania mapy z zaznaczonymi miejscami, które zostały dodane do planu podróży.
-4. Możliwość wyszukania lotów samemu wpisując cel podróży 
 
-Przykładowe użytkowanie:
-    Użytkownik loguje się do aplikacji i wypełnia formularz preferencji podróży. 
-    Aplikacja proponuje cele podróży na podstawie wprowadzonych preferencji. 
-    Użytkownik wybiera cel podróży.
-    Użytkownicy mogą bookować loty bezpośrednio z aplikacji dzięki integracji z API do rezerwacji lotów. 
+Krótki Opis Projektu
+TravelBuddy to intuicyjna aplikacja internetowa zaprojektowana, aby ułatwić planowanie podróży. Użytkownicy mogą wyszukiwać loty, ustawiać i zarządzać swoim budżetem podróżnym, otrzymywać rekomendacje podróżnicze oraz znaleźć idealne miejsce na wakacje poprzez interaktywny quiz. Aplikacja jest przyjazna dla użytkownika, zapewniając płynne doświadczenie w organizowaniu i cieszeniu się podróżami.
+
+Przykładowe Użytkowanie
+Wyszukiwanie Lotów
+Użytkownicy mogą wyszukiwać loty, wpisując kody lotnisk odlotu i przylotu oraz datę wylotu. Aplikacja wyświetli listę dostępnych lotów, które spełniają podane kryteria.
+
+Zarządzanie Budżetem
+Użytkownicy mogą ustawić swój całkowity budżet oraz logować wydatki, aby je śledzić. Aplikacja pokaże całkowity budżet, wydatki oraz pozostały balans.
+
+Quiz Wakacyjny
+Użytkownicy mogą wziąć udział w quizie, aby znaleźć idealne miejsce na wakacje na podstawie swoich preferencji dotyczących klimatu, aktywności i budżetu.
+
+Kod api, gdyby tamten się już zużył:
+172d72e07eaa66177db4cd4db6389136c64c2f42cf426433b0d4b2818e5903cb
