@@ -1,0 +1,29 @@
+<ul class="list-group">
+    {% for flight in flights %}
+    <li class="list-group-item">
+        <strong>Flight:</strong> {{ flight['flights'][0]['departure_airport']['name'] }} to {{ flight['flights'][0]['arrival_airport']['name'] }}<br>
+        <strong>Price:</strong> {{ flight['price'] }} USD<br>
+        <strong>Duration:</strong> {{ flight['total_duration'] }} minutes<br>
+        <strong>Departure:</strong> {{ flight['flights'][0]['departure_airport']['time'] }}<br>
+        <strong>Arrival:</strong> {{ flight['flights'][0]['arrival_airport']['time'] }}<br>
+        <strong>Airline:</strong> <img src="{{ flight['airline_logo'] }}" alt="Airline logo" style="width: 50px;"> {{ flight['flights'][0]['airline'] }}<br>
+        <strong>Layovers:</strong>
+        <ul>
+            {% for layover in flight['layovers'] %}
+            <li>{{ layover['airport'] }} ({{ layover['duration'] }} minutes)</li>
+            {% endfor %}
+        </ul>
+        <strong>Return Flight:</strong> {{ flight['return_flights'][0]['departure_airport']['name'] }} to {{ flight['return_flights'][0]['arrival_airport']['name'] }}<br>
+        <strong>Return Departure:</strong> {{ flight['return_flights'][0]['departure_airport']['time'] }}<br>
+        <strong>Return Arrival:</strong> {{ flight['return_flights'][0]['arrival_airport']['time'] }}<br>
+        <strong>Return Airline:</strong> <img src="{{ flight['return_flights'][0]['airline_logo'] }}" alt="Airline logo" style="width: 50px;"> {{ flight['return_flights'][0]['airline'] }}<br>
+        <strong>Return Layovers:</strong>
+        <ul>
+            {% for layover in flight['return_layovers'] %}
+            <li>{{ layover['airport'] }} ({{ layover['duration'] }} minutes)</li>
+            {% endfor %}
+        </ul>
+    </li>
+    <hr>
+    {% endfor %}
+</ul>

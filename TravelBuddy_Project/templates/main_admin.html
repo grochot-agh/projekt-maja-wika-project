@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN - TravelBuddy</title>
+    <div>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="static/style.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="awesomplete.js" async></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </div>
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav__logo">TravelBuddy</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#credi">About</a></li>
+        <li class="link"><a href="#flight_search">Flights</a></li>
+        <li class="link"><a href="#quiz">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <a class="text-right logout-btn btn btn-custom mt-3" id="result3" href="{{ url_for('auth.logout') }}" >Logout</a>
+      <a class="nav-link" id="result3" href="#credi">Contact</a>
+    </nav>
+
+    <header class="section__container header__container">
+      <h1 class="section__header">Choose your<br />dream destination!</h1>
+      <img src="{{ url_for('static', filename='header.png') }}">
+    </header>
+
+    <section class="section__container plan__container">
+        <p class="subheader">TRAVEL SUPPORT</p>
+        <h2 class="section__header" id="flight_search">Plan your travel with confidence</h2>
+        <p class="description"> Find help with your bookings and travel plans!
+          
+          <form id="search-form" action="/search" method="post">
+            <div class="mb-3">
+                <label for="departure_id" class="form-label">Departure Airport</label>
+                <input type="text" class="form-control" id="departure_id" placeholder="Enter airport code" name="departure_id" required>
+            </div>
+            <div class="mb-3">
+                <label for="arrival_id" class="form-label">Arrival Airport</label>
+                <input type="text" class="form-control" id="arrival_id" placeholder="Enter airport code" name="arrival_id" required>
+            </div>
+            <div class="mb-3">
+                <label for="outbound_date" class="form-label">Outbound Date</label>
+                <input type="date" class="form-control" id="outbound_date" name="outbound_date" required>
+            </div>
+            <!-- <div class="mb-3">
+                <label for="return_date" class="form-label">Return Date</label>
+                <input type="date" class="form-control" id="return_date" name="return_date" required>
+            </div> -->
+            <button id="result3" type="submit">Search Flights</button>
+          </form>
+        <div id="results"></div>
+
+        <main> 
+            <br>
+            <br>
+            <br>
+            <div class="search-box">
+              <div class="wrapper">
+                <div class="container">
+                  <div class="sub-container">
+                    
+                    <p class="description"> Set up your budget here! 
+                    <div class="total-amount-container">
+                      <h3>Budget</h3>
+                      <p class="hide error" id="budget-error"> Value cannot be empty or negative </p>
+                      <input type="number" id="total-amount" placeholder="Enter Total Amount" />
+                    </div>
+                    <button class="submit" id="total-amount-button">Set Budget</button>
+
+                    <div class="user-amount-container">
+                      <h3>Expenses</h3>
+                      <p class="hide error" id="product-title-error">
+                        Values cannot be empty
+                      </p>
+                      <input type="text" class="product-title" id="product-title" placeholder="Enter Title of Product" />
+                      <input type="number" id="user-amount" placeholder="Enter Cost of Product"/>
+                      <button class="submit" id="check-amount">Check Amount</button>
+                    </div>
+                  </div>
+
+                  <div class="output-container flex-space">
+                    <div>
+                      <p>Total Budget</p>
+                      <span id="amount">0</span>
+                    </div>
+                    <div>
+                      <p>Expenses</p>
+                      <span id="expenditure-value">0</span>
+                    </div>
+                    <div>
+                      <p>Balance</p>
+                      <span id="balance-amount">0</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list">
+                  <h3>Expense List</h3>
+                  <div class="list-container" id="list"></div>
+                </div>
+              </div>
+      
+              <a href="#" class="scroll" style="display: block;">
+                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                <span>Scroll to top </span>
+              </a>
+          </div>
+            </div>
+      
+      </main>
+    </section>
+
+    <section class="memories">
+      <div class="section__container memories__container">
+        <div class="memories__header">
+          <h2 class="section__header">
+            How to use our app
+          </h2>
+        </div>
+        <div class="memories__grid">
+          <div class="memories__card">
+            <span><i class="ri-calendar-2-line"></i></span>
+            <h4>Search Flights</h4>
+            <p>
+              Find the best flights with our search engine!
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-shield-check-line"></i></span>
+            <h4>Set up your budget</h4>
+            <p>
+              Take control of your finances and easily track your income, expenses, and savings!
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Read about our recommendations</h4>
+            <p>
+              Best places to visit in 2024!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container lounge__container">
+      </div>
+      <div class="lounge__content">
+        <h2 class="section__header">Our recommendations</h2>
+        <div class="lounge__grid">
+          <div class="lounge__details">
+            <h4>Explore the Wonders of Japan</h4>
+            <p>
+              Discover the unique blend of tradition and modernity in Japan. Visit the historic temples and shrines of Kyoto, experience the bustling streets of Tokyo, and soak in the natural beauty of Mount Fuji.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Experience the Magic of New Zealand</h4>
+            <p>
+              New Zealand offers breathtaking landscapes, from the stunning fjords of Milford Sound to the rolling hills of the Shire. Adventure seekers can enjoy world-class hiking, bungee jumping, and skydiving!
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Discover the Rich History of Greece</h4>
+            <p>
+              Step back in time and explore the ancient ruins and stunning islands of Greece. Visit Athens to see the iconic Parthenon, relax on the beautiful beaches of Santorini, and indulge in the culinary delights of Crete.
+            </p>
+          </div>
+          <div class="lounge__details">
+            <h4>Adventure in the Canadian Rockies</h4>
+            <p>
+              For nature lovers and outdoor enthusiasts, the Canadian Rockies are a dream destination. Explore the majestic Banff and Jasper National Parks, hike through breathtaking trails, and spot wildlife in their natural habitats.
+            </p>
+          </div>
+        </div>
+      </div>
+      <aside class="quiz-container">
+        <h3 id="quiz">Vacation Destination Quiz</h3>
+        <form id="quiz-form">
+            <div class="question">
+                <label>What type of climate do you prefer?</label>
+                <input type="radio" name="climate" value="tropical" required> Tropical <br>
+                <input type="radio" name="climate" value="temperate"> Temperate <br>
+                <input type="radio" name="climate" value="cold"> Cold <br>
+            </div>
+            <div class="question">
+                <label>What type of activities do you enjoy?</label>
+                <input type="radio" name="activities" value="beach" required> Beach <br>
+                <input type="radio" name="activities" value="adventure"> Adventure <br>
+                <input type="radio" name="activities" value="culture"> Culture <br>
+            </div>
+            <div class="question">
+                <label>What is your budget?</label>
+                <input type="radio" name="budget" value="low" required> Low <br>
+                <input type="radio" name="budget" value="medium"> Medium <br>
+                <input type="radio" name="budget" value="high"> High <br>
+            </div>
+            <button id='result3' type="submit">Find My Destination</button>
+        </form>
+        <div class="result" id="result">
+            <h4>Your Perfect Vacation Destination</h4>
+            <p id="destination"></p>
+        </div>
+    </aside>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>TravelBuddy</h3>
+          <p>
+            Discover your dream destination with TravelBuddy! 
+            Our app makes planning your trips effortless 
+            by offering a comprehensive flight search engine, 
+            real-time flight status updates, and handy travel tools. 
+            Whether you're looking for the best flight deals, tracking 
+            flights, or seeking travel inspiration, TravelBuddy has got 
+            you covered!
+          </p>
+          
+        </div>
+        <!-- <div class="footer__col">
+          <h4>INFORMATION</h4>
+          <p>Home</p>
+          <p>About</p>
+          <p>Budget</p>
+          <p>Quiz</p>
+        </div> -->
+        <div class="footer__col">
+          <h4 id="credi">CONTACT</h4>
+          <p>Authors: &copy 2024 Wiktoria Lasek, Maja Lempart</p>
+          <p><b>Email:</b> <a href="mailto:majula@student.agh.edu.pl">majula@student.agh.edu.pl</a></p>
+          <p><b>Email:</b> <a href="mailto:mailto:wlasek@student.agh.edu.pl">lasek@student.agh.edu.pl</a></p>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>  
+
+    <script src="jquery-2.2.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

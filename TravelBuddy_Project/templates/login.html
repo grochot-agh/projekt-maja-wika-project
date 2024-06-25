@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+
+<div class="container col-xl-12 col-xxl-10 px-4 py-5">
+  <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">
+            TravelBuddy
+          </h1>
+          <p class="col-lg-10 fs-4">
+            Plan your travel with confidence.
+          </p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+
+          <form method="post" action="" class="p-4 p-md-5 border rounded-3 bg-light">
+
+              {{ form.hidden_tag() }}
+              <br />
+              <div class="form-floating mb-3">
+                  {{ form.email(class="form-control") }}
+                  <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                  {{ form.password(class="form-control", type="password") }}
+                  <label for="floatingPassword">Password</label>
+              </div>
+              <br />
+              <button class="w-100 btn btn-lg btn-info" id="result3" type="submit">Log in</button>
+              <hr class="my-4">
+              <small class="text-muted">
+                  Don't have an account? <a href="/register" class="text-right">Register</a>
+              </small>
+          </form>
+      </div>
+  </div>
+</div>
+
+  
+{% endblock %}
