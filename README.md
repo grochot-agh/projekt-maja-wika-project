@@ -25,7 +25,7 @@ Krótki Opis Projektu:
   TravelBuddy to intuicyjna aplikacja internetowa zaprojektowana, aby ułatwić planowanie podróży. Użytkownicy mogą wyszukiwać loty, ustawiać i zarządzać swoim budżetem podróżnym, otrzymywać rekomendacje podróżnicze oraz znaleźć idealne miejsce na wakacje poprzez interaktywny quiz. Aplikacja jest przyjazna dla użytkownika, zapewniając płynne doświadczenie w organizowaniu i cieszeniu się podróżami.
 
 Przykładowe Użytkowanie:
-  1) Wyszukiwanie Lotów
+  1) Wyszukiwanie Lotów:
         Użytkownicy mogą wyszukiwać loty, wpisując kody lotnisk odlotu i przylotu oraz datę wylotu. Aplikacja wyświetli listę dostępnych lotów, które spełniają podane kryteria.
 
   2) Zarządzanie Budżetem:
