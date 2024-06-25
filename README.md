@@ -9,27 +9,28 @@ Grupa Projektowa: Wiktoria Lasek, Maja Lempart
 Tytuł Projektu: TravelBuddy  
 
 Cel Projektu:
+
 Celem projektu jest stworzenie wszechstronnej aplikacji internetowej, która pomoże użytkownikom w planowaniu podróży. TravelBuddy ma na celu zapewnienie funkcji takich jak wyszukiwanie lotów, zarządzanie budżetem oraz quiz doboru miejsca wakacyjnego.
 
 Wykorzystywane Technologie:
-HTML5
-JavaScript
-Bootstrap
-Flask
-pytest
+  1) HTML5
+  2) JavaScript
+  3) Bootstrap
+  4) Flask
+  5) pytest
 
 
 Krótki Opis Projektu
-TravelBuddy to intuicyjna aplikacja internetowa zaprojektowana, aby ułatwić planowanie podróży. Użytkownicy mogą wyszukiwać loty, ustawiać i zarządzać swoim budżetem podróżnym, otrzymywać rekomendacje podróżnicze oraz znaleźć idealne miejsce na wakacje poprzez interaktywny quiz. Aplikacja jest przyjazna dla użytkownika, zapewniając płynne doświadczenie w organizowaniu i cieszeniu się podróżami.
+  TravelBuddy to intuicyjna aplikacja internetowa zaprojektowana, aby ułatwić planowanie podróży. Użytkownicy mogą wyszukiwać loty, ustawiać i zarządzać swoim budżetem podróżnym, otrzymywać rekomendacje podróżnicze oraz znaleźć idealne miejsce na wakacje poprzez interaktywny quiz. Aplikacja jest przyjazna dla użytkownika, zapewniając płynne doświadczenie w organizowaniu i cieszeniu się podróżami.
 
 Przykładowe Użytkowanie
-Wyszukiwanie Lotów
+  1) Wyszukiwanie Lotów
 Użytkownicy mogą wyszukiwać loty, wpisując kody lotnisk odlotu i przylotu oraz datę wylotu. Aplikacja wyświetli listę dostępnych lotów, które spełniają podane kryteria.
 
-Zarządzanie Budżetem
+  2) Zarządzanie Budżetem
 Użytkownicy mogą ustawić swój całkowity budżet oraz logować wydatki, aby je śledzić. Aplikacja pokaże całkowity budżet, wydatki oraz pozostały balans.
 
-Quiz Wakacyjny
+  3) Quiz Wakacyjny
 Użytkownicy mogą wziąć udział w quizie, aby znaleźć idealne miejsce na wakacje na podstawie swoich preferencji dotyczących klimatu, aktywności i budżetu.
 
 Kod api, gdyby tamten się już zużył:
