@@ -8,6 +8,6 @@ def start(app, db):
 def loginManeger(app):
     login_manager = LoginManager(app)
     login_manager.init_app(app)
-    login_manager.login_view = 'auth.login'  #jesli ktos jest niezalogowany i probuje uzyskac dostep
+    login_manager.login_view = 'auth.login' 
     return login_manager
 
