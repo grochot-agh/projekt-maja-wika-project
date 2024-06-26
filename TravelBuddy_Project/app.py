@@ -27,7 +27,6 @@ def create_default_user():
         db.session.add(admin)
         db.session.commit()
 
-
 @app.route('/')
 def log():
    return redirect(url_for('auth.login'))
@@ -48,6 +47,8 @@ def forbidden(error):
 def get_forbidden():
     return forbidden(403)
 
+# ! Przy projekcie korzystałyśmy z API serpapi, które ma ograniczoną ilość użyć (aktualnie zostało około 10 wyszukiwań lotów), gdyby zostały wykorzystane, należy zmienić API key na poniższy:
+# 172d72e07eaa66177db4cd4db6389136c64c2f42cf426433b0d4b2818e5903cb
 
 def search_flights(departure_id, arrival_id, outbound_date, return_date='2025-02-01', currency='USD', hl='en'):
     url = "https://serpapi.com/search"
