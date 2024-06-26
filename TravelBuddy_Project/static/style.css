@@ -29,7 +29,6 @@
   color: var(--text-dark);
 }
 
-
 #result3 { 
   padding: 10px 20px;
   outline: none;
@@ -46,7 +45,6 @@
 .container {  
   font-family: 'Times New Roman', serif;
 }
-
 
 .btn:hover {
   background-color: var(--primary-color-dark);
@@ -797,7 +795,6 @@ body {
   }
 }
 
-
 .flight-results {
   margin-top: 20px;
 }
@@ -837,7 +834,6 @@ body {
   font-size: 1.5em;
   cursor: pointer;
 }
-
 
 .quiz-container {
   max-width: 600px;
